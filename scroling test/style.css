@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.sections {
+  height: 100dvh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+}
+
+
+.section--primary {
+  background-color: cornsilk;
+}
+
+.section--secondary {
+  background-color: gainsboro;
+}
+
+.section--info {
+  background-color: aliceblue;
+}
