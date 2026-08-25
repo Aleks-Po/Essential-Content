@@ -15,14 +15,16 @@ body {
     );
     background-size: 600% 600%;
     animation: shift 12s ease-in-out infinite;
-    width: 300px;
+    width: auto;
     height: 250px;
-    border-radius: 16px;
+    padding: 0 40px;
+    border-radius: 18px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease-in-out;
+    
 
 }
 
@@ -30,6 +32,7 @@ body {
     transform: scale(1.1);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease-in-out;
+    
 }
 
 @keyframes shift {
@@ -47,8 +50,10 @@ body {
 
 .innerBlock h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: white;
     mix-blend-mode: difference;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
