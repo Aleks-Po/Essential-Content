@@ -34,7 +34,7 @@ Website name, Logo, Navigation, Footer
 ## Colour ideas
 
 #0FB8BE
-#06515F
+#374151
 #ffffff
 
 ## Website structure
