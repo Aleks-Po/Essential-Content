@@ -1,3 +1,69 @@
 table, th, td {
   border:1px solid black;
 }
+
+.home_image,
+.about_image,
+.activities_image {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #2d2d2d;
+	line-height: 1.6;
+}
+
+header {
+	padding: 30px;
+	background-color: #f5c400;
+}
+
+nav {
+	padding: 32px 0;
+	background-color: #2d2d2d;
+}
+
+nav ul {
+	margin: 0 0 0 24px;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+
+.current-page {
+	color: #2d2d2d;
+	font-weight: bold;
+	background-color: #f5c400;
+	border-bottom: 4px solid #ffffff;
+	padding: 8px 12px;
+}
+
+footer {
+	padding: 20px 30px;
+	color: #ffffff;
+	background-color: #2d2d2d;
+}
