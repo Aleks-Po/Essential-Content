@@ -93,6 +93,67 @@
 						<br>
 						<a href="mailto:dolphins@request.co.uk">dolphins@request.ac.uk</a>
         </section>
+
+
+
+			
+			<form action="#" method="post">
+				<div>
+					<label for="full-name">Full name</label>
+					<input type="text" id="full-name" name="full-name" required>
+				</div>
+
+				<div>
+					<label for="email">Email address</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+
+				<div>
+					<label for="telephone">Telephone number</label>
+					<input type="tel" id="telephone" name="telephone" required>
+				</div>
+
+				<div>
+					<label for="enquiry-type"></label>
+					<select name="enquiry-type" id="enquiry-type" required>
+						<option value="">Select an enquiry type</option>
+						<option value="general">General enquiry</option>
+						<option value="visit">Planning a visit</option>
+						<option value="activities">Activities</option>
+						<option value="accessibility">Accessibility</option>
+					</select>
+				</div>
+
+				<div>
+					<fieldset>
+						<legend>Preferred contact method</legend>
+
+						<div>
+							<input type="radio" id="contact-email" name="contact-method" value="email" required>
+							<label for="contact-email">Email</label>
+						</div>
+
+						<div>
+							<input type="radio" id="contact-telephone" name="contact-method" value="telephone" required>
+							<label for="contact-telephone">Telephone</label>
+						</div>
+					</fieldset>
+				</div>
+
+				<div>
+					<label for="message">Your message</label>
+					<textarea id="message" name="message" rows="6" required></textarea>
+				</div>
+
+				<div>
+					<input type="checkbox" id="contact-consent" name="contact-consent" value="agreed" required>
+					<label for="contact-consent">I agree to be contacted about my enquiry</label>
+				</div>
+
+				<button type="submit">Send enquiry</button>
+			</form>
+
+
     </main>
 
     <footer>

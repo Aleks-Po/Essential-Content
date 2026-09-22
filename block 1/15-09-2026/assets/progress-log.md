@@ -63,3 +63,23 @@
 | 16/09/2026 | Connected pages to the shared stylesheet | Done |
 | 16/09/2026 | Added current-page navigation styles | Done |
 | 16/09/2026 | Tested and corrected the website | Done |
+
+
+
+
+
+
+
+| Test | Expected result | Actual result | Pass or fail | Correction and retest |
+|---|---|---|---|---|
+| Select each form label | The associated control receives focus | Pass |
+| Select preferred contact method | Only one radio button can be selected | Pass |
+| Open enquiry-type menu | All enquiry options are available | Pass |
+| Use the Tab key | Focus moves through controls in a logical order | Pass |
+
+
+
+
+| Date | Work completed | Problems encountered | Action taken |
+|---|---|---|---|
+| 22/09/2026 | Created the structure and controls for the enquiry form | Done |
