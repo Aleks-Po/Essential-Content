@@ -1,0 +1,251 @@
+/* --------------------------------------------------
+   LANDING PAGE STYLESHEET
+   This file controls the appearance of landing.html.
+   -------------------------------------------------- */
+
+/* Apply border-box sizing so padding stays inside set widths. */
+* {
+    box-sizing: border-box;
+}
+
+/* Set the default page font, colours and line spacing. */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352b;
+    background-color: #fffdf7;
+    line-height: 1.6;
+}
+
+/* Remove the default top margin from headings. */
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+/* Keep images inside their containers. */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Style the header across the top of the page. */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d8dfd9;
+}
+
+/* Limit the header width and place its children in a row. */
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+}
+
+/* Style the linked website name. */
+.site-name {
+    color: #285b37;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Display navigation items in a horizontal row. */
+.nav-list {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style every navigation link. */
+.nav-list a {
+    display: block;
+    padding: 8px 12px;
+    color: #26352b;
+    text-decoration: none;
+}
+
+/* Show interaction and identify the current page. */
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list .current-page {
+    color: #ffffff;
+    background-color: #285b37;
+}
+
+/* Create the two-column hero area. */
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 72px 24px;
+}
+
+/* Make the main heading prominent. */
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+/* Round the supplied hero illustration. */
+.hero-image {
+    border-radius: 18px;
+}
+
+
+.page-heading {
+	margin: 0 0 70px 0;
+}
+
+.page-container {
+	width: 1100px;
+	margin: 0 auto;
+	padding: 72px 24px;
+}
+
+.shop-layout {
+	display: flex;
+	gap: 40px;
+}
+
+.shop-info_wrap {
+	flex: 1;
+}
+
+.products-heading_wrap {
+	flex: 2;
+}
+
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 20px;
+	row-gap: 32px;
+}
+
+
+.product-content p:first-child,
+.product-content :nth-of-type(2n) {
+	margin: 0 0 8px;
+}
+
+
+.product-content :nth-of-type(3n) {
+	margin: 0 0 20px;
+}
+
+
+/* Reusable small heading placed above main headings. */
+.eyebrow {
+    margin-bottom: 8px;
+    color: #8a5b18;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Reusable link that looks like a button. */
+.button {
+    display: inline-block;
+    padding: 11px 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #285b37;
+}
+
+/* Make the button react to mouse and keyboard focus. */
+.button:hover,
+.button:focus {
+    background-color: #173d24;
+}
+
+/* Add space around the highlight section. */
+.highlights {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 24px 72px;
+}
+
+/* Separate the heading from the card grid. */
+.section-heading {
+    margin-bottom: 24px;
+}
+
+/* Arrange three cards in equal columns. */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* Style each repeated feature card. */
+.feature-card {
+    padding: 24px;
+    background-color: #ffffff;
+    border-top: 5px solid #d39a38;
+    box-shadow: 0 8px 22px rgba(38, 53, 43, 0.1);
+}
+
+/* Create a strong final call-to-action area. */
+.callout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 70px;
+    padding: 30px;
+    color: #ffffff;
+    background-color: #285b37;
+    border-radius: 10px;
+}
+
+/* Reverse the button colours inside the callout. */
+.button-light {
+    color: #285b37;
+    background-color: #ffffff;
+}
+
+/* Style the footer. */
+.site-footer {
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #1e2e23;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* Stack layout columns on smaller screens. */
+@media (max-width: 760px) {
+    .header-inner,
+    .callout {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero,
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+}
+

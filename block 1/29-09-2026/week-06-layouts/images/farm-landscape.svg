@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Farm landscape illustration</title>
+  <desc id="desc">Green fields, hills, trees and a red barn beneath a pale sky.</desc>
+  <rect width="800" height="560" fill="#dcefeb"/>
+  <circle cx="660" cy="105" r="55" fill="#f0c75e"/>
+  <path d="M0 290 Q160 170 340 285 T800 250 V560 H0Z" fill="#779b72"/>
+  <path d="M0 360 Q190 245 390 350 T800 320 V560 H0Z" fill="#4f7852"/>
+  <rect x="315" y="255" width="180" height="150" fill="#a94c3f"/>
+  <path d="M285 260 L405 170 L525 260Z" fill="#6b382f"/>
+  <rect x="370" y="320" width="70" height="85" fill="#f2dfbd"/>
+  <rect x="85" y="250" width="22" height="120" fill="#654b33"/>
+  <circle cx="96" cy="225" r="62" fill="#315f3b"/>
+  <path d="M0 445 Q170 400 330 455 T800 430 V560 H0Z" fill="#315f3b"/>
+</svg>
+

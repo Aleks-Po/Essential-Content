@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #2d2d2d; }
+    .title { font-size: 26px; font-weight: 700; }
+    .label { font-size: 18px; font-weight: 700; }
+    .small { font-size: 14px; }
+    .box { fill: #fff; stroke: #555; stroke-width: 2; }
+    .soft { fill: #f3f3f3; stroke: #777; stroke-width: 2; }
+    .accent { fill: #f5c400; stroke: #555; stroke-width: 2; }
+    .line { stroke: #999; stroke-width: 7; stroke-linecap: round; }
+  </style>
+  <rect width="1200" height="900" fill="#ececec"/>
+  <text x="60" y="48" class="title">Wireframe 3 — Contact Page</text>
+  <rect x="60" y="70" width="1080" height="760" class="box"/>
+
+  <!-- Header -->
+  <rect x="80" y="90" width="1040" height="70" class="soft"/>
+  <rect x="105" y="108" width="235" height="34" class="box"/>
+  <text x="137" y="131" class="label">SITE NAME</text>
+  <rect x="690" y="108" width="405" height="34" class="box"/>
+  <text x="798" y="131" class="label">NAVIGATION</text>
+
+  <!-- Heading -->
+  <rect x="80" y="180" width="1040" height="110" class="soft"/>
+  <text x="105" y="215" class="label">PAGE HEADING</text>
+  <line x1="105" y1="245" x2="485" y2="245" class="line"/>
+  <line x1="105" y1="268" x2="650" y2="268" class="line"/>
+
+  <!-- Contact details -->
+  <rect x="80" y="315" width="335" height="430" fill="#555" stroke="#555" stroke-width="2"/>
+  <text x="135" y="355" class="label" style="fill:#fff">CONTACT DETAILS</text>
+  <text x="110" y="410" class="small" style="fill:#fff">EMAIL</text>
+  <line x1="110" y1="430" x2="330" y2="430" class="line"/>
+  <text x="110" y="485" class="small" style="fill:#fff">TELEPHONE</text>
+  <line x1="110" y1="505" x2="300" y2="505" class="line"/>
+  <text x="110" y="560" class="small" style="fill:#fff">ADDRESS</text>
+  <line x1="110" y1="580" x2="320" y2="580" class="line"/>
+  <line x1="110" y1="605" x2="280" y2="605" class="line"/>
+
+  <!-- Form -->
+  <rect x="440" y="315" width="680" height="430" class="soft"/>
+  <text x="475" y="350" class="label">ENQUIRY FORM</text>
+  <text x="475" y="390" class="small">FULL NAME</text>
+  <rect x="475" y="400" width="610" height="38" class="box"/>
+  <text x="475" y="470" class="small">EMAIL ADDRESS</text>
+  <rect x="475" y="480" width="610" height="38" class="box"/>
+  <text x="475" y="550" class="small">ENQUIRY TYPE</text>
+  <rect x="475" y="560" width="610" height="38" class="box"/>
+  <text x="475" y="630" class="small">MESSAGE</text>
+  <rect x="475" y="640" width="610" height="50" class="box"/>
+  <rect x="475" y="705" width="155" height="28" class="accent"/>
+  <text x="508" y="725" class="small">SEND ENQUIRY</text>
+
+  <rect x="80" y="775" width="1040" height="35" fill="#555"/>
+  <text x="550" y="798" class="small" style="fill:#fff">FOOTER</text>
+</svg>
+

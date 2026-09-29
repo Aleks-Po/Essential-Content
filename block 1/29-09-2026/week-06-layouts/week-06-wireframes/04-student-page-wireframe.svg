@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000">
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #2d2d2d; }
+    .title { font-size: 26px; font-weight: 700; }
+    .label { font-size: 18px; font-weight: 700; }
+    .small { font-size: 14px; }
+    .box { fill: #fff; stroke: #555; stroke-width: 2; }
+    .soft { fill: #f3f3f3; stroke: #777; stroke-width: 2; }
+    .accent { fill: #f5c400; stroke: #555; stroke-width: 2; }
+    .line { stroke: #999; stroke-width: 7; stroke-linecap: round; }
+  </style>
+  <rect width="1200" height="1000" fill="#ececec"/>
+  <text x="60" y="48" class="title">Wireframe 4 — Student Styling Task</text>
+  <rect x="60" y="70" width="1080" height="860" class="box"/>
+
+  <!-- Header -->
+  <rect x="80" y="90" width="1040" height="70" class="soft"/>
+  <rect x="105" y="108" width="235" height="34" class="box"/>
+  <text x="137" y="131" class="label">SITE NAME</text>
+  <rect x="620" y="108" width="475" height="34" class="box"/>
+  <text x="760" y="131" class="label">NAVIGATION</text>
+
+  <!-- Heading and notice -->
+  <rect x="80" y="180" width="1040" height="105" class="soft"/>
+  <text x="105" y="215" class="label">VISITOR INFORMATION HEADING</text>
+  <line x1="105" y1="248" x2="650" y2="248" class="line"/>
+  <rect x="80" y="305" width="1040" height="75" class="accent"/>
+  <text x="105" y="350" class="label">IMPORTANT NOTICE</text>
+
+  <!-- Information cards -->
+  <text x="80" y="420" class="label">PLAN YOUR VISIT</text>
+  <rect x="80" y="440" width="505" height="135" class="box"/>
+  <rect x="615" y="440" width="505" height="135" class="box"/>
+  <rect x="80" y="595" width="505" height="135" class="box"/>
+  <rect x="615" y="595" width="505" height="135" class="accent"/>
+  <text x="240" y="510" class="label">OPENING HOURS</text>
+  <text x="790" y="510" class="label">ADMISSION</text>
+  <text x="255" y="665" class="label">GETTING HERE</text>
+  <text x="790" y="665" class="label">ACCESSIBILITY</text>
+
+  <!-- Quote and callout -->
+  <rect x="80" y="750" width="1040" height="60" class="soft"/>
+  <text x="460" y="787" class="label">VISITOR QUOTATION</text>
+  <rect x="80" y="830" width="1040" height="60" class="accent"/>
+  <text x="105" y="868" class="label">FINAL CALL TO ACTION</text>
+  <rect x="900" y="845" width="190" height="32" class="box"/>
+  <text x="950" y="867" class="small">BUTTON</text>
+
+  <rect x="80" y="900" width="1040" height="20" fill="#555"/>
+</svg>

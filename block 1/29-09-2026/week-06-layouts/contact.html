@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <!-- Information used by the browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Clyde Valley Farm</title>
+
+    <!-- This page uses a stylesheet designed for contact information and a form -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Site header and navigation -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-name" href="landing.html">Clyde Valley Farm</a>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="products.html">Farm Shop</a></li>
+                    <li><a class="current-page" href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main page content -->
+    <main class="page-container">
+        <!-- Page introduction -->
+        <header class="page-heading">
+            <p class="eyebrow">We are happy to help</p>
+            <h1>Contact the farm</h1>
+            <p>Send an enquiry about visiting, accessibility, group bookings or farm-shop products.</p>
+        </header>
+
+        <!-- Two-column contact layout -->
+        <div class="contact-layout">
+            <!-- Contact details appear in the smaller column -->
+            <aside class="contact-details">
+                <h2>Contact details</h2>
+
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+                </section>
+
+                <section>
+                    <h3>Telephone</h3>
+                    <p><a href="tel:+441410000000">0141 000 0000</a></p>
+                </section>
+
+                <section>
+                    <h3>Address</h3>
+                    <address>
+                        Clyde Valley Farm<br>
+                        Valley Road<br>
+                        Lanarkshire<br>
+                        ML0 0AA
+                    </address>
+                </section>
+
+                <p class="contact-note">We normally respond within two working days.</p>
+            </aside>
+
+            <!-- Enquiry form appears in the larger column -->
+            <section class="form-panel" aria-labelledby="form-heading">
+                <h2 id="form-heading">Send an enquiry</h2>
+                <p>Fields marked (required) must be completed.</p>
+
+                <!-- This practice form does not send information to a real service -->
+                <form action="#" method="post">
+                    <div class="form-field">
+                        <label for="full-name">Full name (required)</label>
+                        <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email address (required)</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="enquiry-type">Enquiry type (required)</label>
+                        <select id="enquiry-type" name="enquiry-type" required>
+                            <option value="">Select an enquiry type</option>
+                            <option value="visit">Planning a visit</option>
+                            <option value="group">Group booking</option>
+                            <option value="accessibility">Accessibility</option>
+                            <option value="shop">Farm shop</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Your message (required)</label>
+                        <p class="field-help" id="message-help">Enter between 20 and 500 characters.</p>
+                        <textarea id="message" name="message" rows="6" minlength="20" maxlength="500"
+                            aria-describedby="message-help" required></textarea>
+                    </div>
+
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="consent" name="consent" value="agreed" required>
+                        <label for="consent">I agree to be contacted about this enquiry (required)</label>
+                    </div>
+
+                    <button type="submit">Send enquiry</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Clyde Valley Farm</p>
+    </footer>
+</body>
+
+</html>
+

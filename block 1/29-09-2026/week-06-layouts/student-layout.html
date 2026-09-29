@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <!-- Information used by the browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Information | Clyde Valley Farm</title>
+
+    <!-- STUDENT TASK:
+         1. Create a new file called student-layout.css inside the css folder.
+         2. Add a link element here to connect the new stylesheet.
+         3. Style this page using the CSS skills covered in Week 6.
+    -->
+</head>
+
+<body>
+    <!-- Site header and navigation -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-name" href="landing.html">Clyde Valley Farm</a>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="products.html">Farm Shop</a></li>
+                    <li><a class="current-page" href="student-layout.html" aria-current="page">Visitor Information</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main page content -->
+    <main class="page-container">
+        <!-- Introductory page heading -->
+        <header class="page-heading">
+            <p class="eyebrow">Plan your day</p>
+            <h1>Visitor information</h1>
+            <p>Everything you need to know before travelling to Clyde Valley Farm.</p>
+        </header>
+
+        <!-- Important message that should be visually distinct -->
+        <aside class="notice">
+            <h2>Before you travel</h2>
+            <p>Outdoor activities may change during severe weather. Check for updates before leaving home.</p>
+        </aside>
+
+        <!-- Repeated information cards: use one reusable class to style them -->
+        <section class="information-section" aria-labelledby="information-heading">
+            <h2 id="information-heading">Plan your visit</h2>
+
+            <div class="information-grid">
+                <article class="information-card">
+                    <h3>Opening hours</h3>
+                    <p>We are open every Saturday and Sunday from 10:00 until 16:00.</p>
+                    <p>Last entry is at 15:00.</p>
+                </article>
+
+                <article class="information-card">
+                    <h3>Admission</h3>
+                    <ul>
+                        <li>Adults: £8.00</li>
+                        <li>Children: £5.00</li>
+                        <li>Under threes: free</li>
+                        <li>Family ticket: £23.00</li>
+                    </ul>
+                </article>
+
+                <article class="information-card">
+                    <h3>Getting here</h3>
+                    <p>The farm is approximately fifteen minutes from the nearest railway station.</p>
+                    <p>Free visitor parking is available beside the entrance.</p>
+                </article>
+
+                <article class="information-card featured-card">
+                    <h3>Accessibility</h3>
+                    <p>The shop, café and main animal area have step-free access.</p>
+                    <p>Please contact us if you would like to discuss individual access requirements.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- A quotation creates a different type of content block -->
+        <figure class="visitor-quote">
+            <blockquote>
+                <p>“A relaxed family day out with friendly staff and plenty for younger children to see.”</p>
+            </blockquote>
+            <figcaption>Recent visitor feedback</figcaption>
+        </figure>
+
+        <!-- Final call to action -->
+        <section class="callout">
+            <div>
+                <h2>Do you have a question?</h2>
+                <p>Send us an enquiry before your visit and we will be happy to help.</p>
+            </div>
+            <a class="button" href="contact.html">Contact the farm</a>
+        </section>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Clyde Valley Farm</p>
+    </footer>
+</body>
+
+</html>
+
