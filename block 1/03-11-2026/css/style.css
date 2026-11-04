@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	min-height: 95vh;
+	min-height: 100vh;
 	color: #2b1e15;
 	background-color: #ffffff;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -56,9 +56,9 @@ body .menu-is-open {
 .site-header {
 	position: sticky;
 	top: 0;
-	z-index: 100;
+	z-index: 1000;
 	background-color: #ffffff;
-	border: 0 0 1px 0 solid #e7e3ff;
+	border-bottom: 1px solid #e7e3ff;
 	box-shadow: 0 4px 18px rgba(45, 36, 120, 0.1);
 }
 
@@ -130,4 +130,289 @@ body .menu-is-open {
 	padding: 45px 5%;
 	background: linear-gradient(155deg, #4c3cff 0%, #6d4cff 50%, #17152b 100%);
 	overflow-y: auto;
+}
+
+
+.main-navigation.menu-open {
+	display: block;
+}
+
+
+.nav-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	max-width: 700px;
+	margin: 0 auto;
+	list-style: none;
+}
+
+
+.nav-list a {
+	display: block;
+	padding: 14px 16px;
+	color: #ffffff;
+	font-size: 27px;
+	font-weight: 600;
+	text-decoration: none;
+	border: 0 0 1px 0 solid rgba(255, 255, 255, 0.1);
+}
+
+
+.nav-list a[aria-current="page"] {
+	color: #ffd166;
+}
+
+
+.social-links {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 32px auto 0;
+	padding: 0;
+	max-width: 700px;
+	list-style: none;
+}
+
+
+.social-links a {
+	display: grid;
+	width: 46px;
+	height: 46px;
+	color: #17152b;
+	background-color: #ffd166;
+	border-radius: 50%;
+	place-items: center;
+	text-decoration: none;
+}
+
+
+.social-links a:hover,
+.social-links a:focus-visible {
+	color: #ffffff;
+	background-color: #d83f58;
+}
+
+
+.site-footer {
+	padding-top: 48px;
+	color: #ffffff;
+	background-color: #17152b;
+	border-top: 6px solid #4c3cff;
+}
+
+
+.image-container {
+	width: 100%;
+	height: 500px;
+	background-image: 
+		linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(76, 60, 255, 0.1)), 
+		url(../images/home-hero-image.jpg);
+	background-size: cover;
+	background-position: 50% 10%;
+	display: flex;
+	align-items: center;
+}
+
+.hero-details {
+	padding: 0 100px 0;
+}
+
+
+.hero-details h1 {
+	color: #ffffff;
+	margin: 0 0 16px 0;
+}
+
+.hero-details p {
+	color: #ffffff;
+	margin: 0 0 32px 0;
+}
+
+
+.hero-details a {
+	padding: 10px 24px;
+	background-color: #4c3cff;
+	color: #ffffff;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-layout {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+
+.footer-title {
+	margin-top: 0;
+	margin-bottom: 8px;
+	color: #ffffff;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
+.footer-description {
+	max-width: 430px;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #dcd8f5;
+}
+
+
+
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.footer-links a {
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+	color: #ffd166;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+
+.footer-bottom {
+	padding-top: 18px;
+	padding-bottom: 22px;
+	margin-top: 32px;
+	color: #c9c4e5;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.footer-bottom p {
+	margin: 0;
+}
+
+
+
+
+@media (min-width: 800px) {
+	.header-layout {
+		height: 82px;
+	}
+
+
+	.site-name {
+		font-size: 24px;
+	}
+
+
+	.menu-button {
+		display: none;
+	}
+
+
+	.main-navigation {
+		display: flex;
+		position: static;
+		align-items: center;
+		gap: 16px;
+		padding: 0;
+		background: transparent;
+		overflow: visible;
+	}
+
+
+	.nav-list {
+		flex-direction: row;
+		align-items: center;
+		gap: 6px;
+		max-width: none;
+	}
+
+
+	.nav-list a {
+		padding: 10px 12px;
+		color: #17152b;
+		font-size: 16px;
+		border: 0;
+		border-radius: 8px;
+
+	}
+
+
+	.nav-list a:hover,
+  .nav-list a:focus-visible {
+		color: #4c3cff;
+		background-color: #f5f3ff;
+  }
+
+	.nav-list a[aria-current="page"] {
+		color: #ffffff;
+		background-color: #4c3cff;
+		box-shadow: 0 6px 14px rgba(76, 60, 255, 0.22);
+	}
+
+	.social-links {
+		gap: 8px;
+		max-width: none;
+		margin: 0;
+		padding-left: 16px;
+		border: 0 0 0 1px solid #ddd8ff;
+	}
+
+	.social-links a {
+		width: 36px;
+		height: 36px;
+		color: #4c3cff;
+		background-color: #f5f3ff;
+	}
+
+
+	.footer-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+
+	.footer-links {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 18px;
+	}
 }
