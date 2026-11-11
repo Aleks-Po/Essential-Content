@@ -231,6 +231,10 @@ body .menu-is-open {
 	background-position: 50% 10%;
 }
 
+.services_image-container {
+	background-color: #fbf4fb;
+}
+
 .hero-details-wrap {
 	width: 90%;
 	max-width: 1200px;
@@ -240,10 +244,30 @@ body .menu-is-open {
 	align-items: center;
 }
 
+.services_card-content-title {
+	margin: 0 0 60px;
+}
+
+.services_hero-details h5,
+.services_card-content-title h5 {
+	color: #d83f58;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 0 8px;
+	font-size: 15px;
+}
+
 .hero-details h1 {
 	color: #ffffff;
 	line-height: 1.2;
 	margin: 0 0 16px 0;
+}
+
+.services_hero-details h1 {
+	font-size: 52px;
+	margin: 0 0 20px;
+	width: 70%;
+	line-height: 1.3;
 }
 
 .hero-details p {
@@ -251,6 +275,13 @@ body .menu-is-open {
 	margin: 0 0 32px 0;
 	line-height: 1.5;
 }
+
+.services_hero-details p {
+	font-size: 20px;
+	margin: 0 0 40px;
+	color: #404047;
+}
+
 
 .hero-details a {
 	padding: 10px 24px;
@@ -262,6 +293,17 @@ body .menu-is-open {
 	display: inline-block;
 }
 
+.services_hero-details a {
+	padding: 16px 28px;
+	background-color: #4c3cff;
+	color: #ffffff;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	display: inline-flex;
+	gap: 12px;
+
+}
 
 
 
@@ -277,7 +319,9 @@ body .menu-is-open {
 
 
 
-.card-section {
+
+.card-section,
+.services-section {
 	padding: 60px 0;
 }
 
@@ -285,7 +329,8 @@ body .menu-is-open {
 	background-color: #fbf4fb;
 }
 
-.card-content {
+.card-content,
+.services_cards-container {
 	padding: 32px 32px 40px;
 }
 
@@ -307,11 +352,22 @@ body .menu-is-open {
 	font-size: 28px;
 }
 
+.services_card-content-title h1 {
+	font-size: 36px;
+	margin: 0 0 20px;
+}
+
 .card-content-title p {
 	width: 100%;
 	line-height: 1.5;
 	margin: 0;
 	color: #404047;
+}
+
+.services_card-content-title p {
+	color: #404047;
+	font-size: 18px;
+	margin: 0;
 }
 
 .cards-container {
@@ -600,7 +656,8 @@ body .menu-is-open {
 		color: #404047;
 	}
 
-	.cards-container {
+	.cards-container,
+	.services_cards-container {
 		display: flex;
 		justify-content: space-between;
 		gap: 32px;
