@@ -903,6 +903,7 @@ body .menu-is-open {
 	padding: 16px 18px;
 	border-radius: 8px;
 	border: 1px solid #cecbd7;
+	outline: none;
 }
 
 
@@ -945,6 +946,19 @@ body .menu-is-open {
 	border-color: #3828d6;
 }
 
+.user_name input:hover,
+.user_email input:hover,
+.user_brand input:hover,
+.user_name input:focus,
+.user_email input:focus,
+.user_brand input:focus,
+.user_name input:active,
+.user_email input:active,
+.user_brand input:active {
+	border-style: none;
+	background-color: #f5f3ff;
+	border: 1px solid #3828d6;
+}
 
 
 
