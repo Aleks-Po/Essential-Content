@@ -279,19 +279,24 @@ body .menu-is-open {
 	margin: 0 0 16px 0;
 }
 
-.services_hero-details h1,
-.about_hero-details h1:not(:nth-of-type(1)),
-.contact_hero-details h1:not(:nth-of-type(1)) {
-	font-size: 40px;
+.services_hero-details h1 {
+	font-size: 32px;
 	margin: 0 0 20px;
 	line-height: 1.3;
 }
 
-.about_hero-details h1:nth-of-type(1),
-.contact_hero-details h1:nth-of-type(1) {
-	font-size: 40px;
+.about_hero-details h1,
+.contact_hero-details h1 {
+	font-size: 32px;
 	margin: 0;
-	line-height: 1.3;
+	line-height: 1.4;
+	margin: 0 0 20px;
+}
+
+
+.about_hero-details h1 span,
+.contact_hero-details h1 span {
+	display: block;
 }
 
 .hero-details p {
@@ -303,7 +308,7 @@ body .menu-is-open {
 .services_hero-details p,
 .about_hero-details p,
 .contact_hero-details p {
-	font-size: 20px;
+	font-size: 16px;
 	margin: 0 0 40px;
 	color: #404047;
 }
@@ -322,17 +327,18 @@ body .menu-is-open {
 .services_hero-details a,
 .about_hero-details a,
 .form_button_wrap button {
-	padding: 16px 28px;
+	padding: 14px 26px;
 	background-color: #4c3cff;
 	color: #ffffff;
 	border-radius: 10px;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: 500;
 	display: inline-flex;
 	gap: 12px;
 	border-style: none;
 	outline: none;
 	cursor: pointer;
+	font-size: 15px;
 }
 
 
@@ -393,7 +399,7 @@ body .menu-is-open {
 }
 
 .services_card-content-title h1 {
-	font-size: 34px;
+	font-size: 28px;
 	margin: 0 0 20px;
 }
 
@@ -849,7 +855,20 @@ body .menu-is-open {
 
 
 
+.contact_form-content {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 64px;
+}
 
+.contact_form-container {
+	flex: 2;
+}
+
+.contact_form-sideBanner {
+	flex: 1;
+	height: max-content;
+}
 
 .contact_form-title {
 	margin: 0 0 36px;
@@ -859,19 +878,19 @@ body .menu-is-open {
 	margin: 0 0 10px;
 	color: #d83f58;
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 700;
 }
 
 .contact_form-title h1 {
-	font-size: 32px;
+	font-size: 26px;
 	margin: 0 0 16px;
 	color: #17152b;
 	line-height: 1.5;
 }
 
 .contact_form-title p {
-	font-size: 17px;
+	font-size: 16px;
 	color: #404047;
 	margin: 0;
 }
@@ -899,7 +918,7 @@ body .menu-is-open {
 .user_budget label,
 .user_timeFrame label,
 .user_idea label {
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: 600;
 	display: block;
 }
@@ -912,7 +931,7 @@ body .menu-is-open {
 .user_budget select,
 .user_timeFrame input,
 .user_idea textarea {
-	padding: 16px 18px;
+	padding: 12px 16px;
 	border-radius: 8px;
 	border: 1px solid #cecbd7;
 	outline: none;
@@ -1040,7 +1059,7 @@ body .menu-is-open {
 	gap: 26px;
 }
 
-.contact_form input,
+.contact_form input:not(.user_agreement_checkbox),
 .contact_form select,
 .contact_form textarea {
 	width: 100%;
@@ -1054,6 +1073,7 @@ body .menu-is-open {
 .contact_form .user_preferences {
 	display: flex;
 	gap: 20px;
+	flex-direction: column;
 }
 
 
@@ -1080,6 +1100,25 @@ body .menu-is-open {
 .contact_form .button_group .button_group_wrap {
 	display: flex;
 	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.user_agreement {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.user_agreement_checkbox {
+	margin: 0;
+	width: 13px;
+	height: 13px;
+}
+
+.user_agreement label {
+	font-size: 15px;
+	font-weight: 500;
+	color: #404047;
 }
 
 
@@ -1116,7 +1155,7 @@ body .menu-is-open {
 
 .contact_form-sideBanner h5 {
 	color: #d83f58;
-	font-size: 15px;
+	font-size: 14px;
 }
 .contact_form-sideBanner h5:nth-of-type(1) {
 	text-transform: uppercase;
@@ -1124,7 +1163,7 @@ body .menu-is-open {
 
 .contact_form-sideBanner h2 {
 	color: #17152b;
-	font-size: 28px;
+	font-size: 26px;
 	line-height: 1.3;
 }
 .contact_form-sideBanner h2 span {
@@ -1138,13 +1177,13 @@ body .menu-is-open {
 
 .contact_form-sideBanner p {
 	color: #404047;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.5;
 }
 
 .contact_form-sideBanner h3 {
 	color: #17152b;
-	font-size: 21px;
+	font-size: 20px;
 }
 
 
@@ -1368,7 +1407,7 @@ body .menu-is-open {
 
 	.services_hero-details h1 {
 		width: 70%;
-		font-size: 52px;
+		font-size: 48px;
 	}
 
 	.about_hero-details p,
@@ -1556,8 +1595,17 @@ body .menu-is-open {
 	}
 
 
+	.contact_form-content {
+		flex-direction: row;
+	}
+	.contact_form .user_details,
+	.contact_form .user_preferences {
+		flex-direction: row;
+	}
 
-
+	.user_agreement label {
+		font-size: 17px;
+	}
 
 
 
