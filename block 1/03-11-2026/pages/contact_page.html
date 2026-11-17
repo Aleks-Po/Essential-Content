@@ -83,7 +83,7 @@
 							<p>A few details will help us understand where you want to go. <span>Fields marked * are required.</span></p>
 						</div>
 
-						<form class="contact_form">
+						<form class="contact_form" id="contactForm">
 
 							<div class="user_details">
 								<div class="user_name">
@@ -102,37 +102,78 @@
 								<input type="text" name="userBrand" id="userBrand" placeholder="Your company or organisation">
 							</div>
 
-							<!-- <div role="button-group" class="service_option_buttons">
-								<legend id="service-options">What can we help with? *</legend>
-								<div class="option_buttons_wrap">
-									<button type="button" value="Brand identity" aria-pressed="false">Brand identity</button>
-									<button type="button" value="Digital design" aria-pressed="false">Digital Design</button>
-									<button type="button" value="Not sure yet" aria-pressed="false">Not sure yet</button>
-								</div>
-							</div> -->
 
-
-							<div class="button-group" >
+							<div class="button_group" >
 								<legend>What can we help with? *</legend>
+								<div class="button_group_wrap">
+									<input type="checkbox" id="option-1" name="options" value="brand identity">
+									<label for="option-1">Brand identity</label>
 
-								<input type="checkbox" id="option-1" name="options" value="brand identity">
-								<label for="option-1">Brand identity</label>
+									<input type="checkbox" id="option-2" name="options" value="digital design">
+									<label for="option-2">Digital Design</label>
 
-								<input type="checkbox" id="option-2" name="options" value="digital design">
-								<label for="option-2">Digital Design</label>
+									<input type="checkbox" id="option-3" name="options" value="Content direction">
+									<label for="option-3">Content direction</label>
 
-								<input type="checkbox" id="option-3" name="options" value="Content direction">
-								<label for="option-3">Content direction</label>
-
-								<input type="checkbox" id="option-4" name="options" value="not sure yet">
-								<label for="option-4">Not sure yet</label>
+									<input type="checkbox" id="option-4" name="options" value="not sure yet">
+									<label for="option-4">Not sure yet</label>
+								</div>
+								
 							</div>
 
+							<div class="user_preferences">
+								<div class="user_budget">
+									<label for="userBudget">Budget range</label>
+									<select name="userBudget" id="userBudget">
+										<option value>Choose your budget</option>
+										<option value="500-1000">£500 - £1,000</option>
+										<option value="1000-3000">£1,000 - £3,000</option>
+										<option value="3000-5000">£3,000 - £5,000</option>
+										<option value="5000-7000">£5,000 - £7,000</option>
+									</select>
+								</div>
+								
+								<div class="user_timeFrame">
+									<label for="userTimeFrame">Ideal timeline</label>
+									<input type="date" name="userTimeFrame" id="userTimeFrame">
+								</div>
+							</div>
+
+							<div class="user_idea">
+								<label for="userIdea">Your project *</label>
+								<textarea name="userIdea" id="userIdea" placeholder="Write your idea here..."></textarea>
+							</div>
+
+
+							<div class="user_agreement">
+								<input type="checkbox" name="userAgreement" id="userAgreement">
+								<label for="userAgreement">I agree to be contacted by Northline Studio about this enquiry. *</label>
+							</div>
+
+							<div class="form_button_wrap">
+								<button type="button" id="contactForm">Send enquiry <span><i class="fa-solid fa-arrow-right fa-width-auto"></i></span></button>
+							</div>
 
 						</form>
 					</div>
 
-					<div class="contact_form-banner"></div>
+					<div class="contact_form-sideBanner">
+						<h5>let's connect</h5>
+						<h2>A small studio, <span>a personal approch.</span></h2>
+						<p>
+							You don't need a finished brief. A little about your idea is enough to start the conversation.
+						</p>
+						<h5>Based In</h5>
+						<h4>Glasgow, Scotland</h4>
+						<p>
+							Branding, digital design and content for businesses and organisations.
+						</p>
+						<h3>Not sure where to start?</h3>
+						<p>
+							Choose “Not sure yet” and tell us what you're hoping to change. We'll explore the right approach together.
+						</p>
+
+					</div>
 				</div>
 
 			</div>
