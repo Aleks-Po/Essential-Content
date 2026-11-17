@@ -1,3 +1,8 @@
+html {
+	scroll-behavior: smooth;
+}
+
+
 * {
 	box-sizing: border-box;
 }
@@ -5,8 +10,6 @@
 
 body {
 	margin: 0;
-	display: flex;
-	flex-direction: column;
 	min-height: 100vh;
 	color: #2b1e15;
 	background-color: #ffffff;
@@ -15,13 +18,9 @@ body {
 }
 
 
-main {
-	flex: 1;
-}
 
 
 img {
-	display: block;
 	max-width: 100%;
 	height: auto;
 	object-fit: cover;
@@ -38,25 +37,152 @@ select {
 }
 
 
-a {
+
+
+
+
+
+
+
+
+
+.menu-button,
+.nav-list a,
+.social-links a:hover,
+.social-links a:focus-visible,
+.hero-details h1,
+.hero-details p,
+.hero-details a,
+.services_hero-details a,
+.about_hero-details a,
+.form_button_wrap button,
+.services_cta-content-wrap a,
+.button_group input[type="checkbox"]:checked + label,
+.site-footer,
+.footer-title,
+.nav-list a[aria-current="page"] {
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+img,
+.main-navigation.menu-open,
+.nav-list a,
+.about_hero-details h1 span,
+.contact_hero-details h1 span,
+.contact_form-title p span,
+.user_name label,
+.user_email label,
+.user_brand label,
+.button_group legend,
+.user_budget label,
+.user_timeFrame label,
+.user_idea label,
+.contact_form-sideBanner h2 span {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+a,
+.site-name:hover,
+.site-name:focus-visible,
+.card-item button,
+.services_process-step-card h4,
+.about_ourValues-card-details h4 {
 	color: #4c3cff;
 }
+
+
+
+
+
+
 
 
 .card-content-title p,
 .card-details-container p,
 .card-details-container ul li,
 .services_card-details-container p,
-.services_card-details-container ul {
+.services_card-details-container ul,
+.services_hero-details p,
+.about_hero-details p,
+.contact_hero-details p,
+.card-content-title p,
+.services_card-content-title p,
+.services_process-step-card p,
+.services_cta-content-title p,
+.about_story-details-content p,
+.about_ourValues-card-details p,
+.about_howWeWork-details-wrap p,
+.contact_form-title p,
+.user_name input,
+.user_email input,
+.user_brand input,
+.user_budget select,
+.user_timeFrame input,
+.user_idea textarea,
+.button_group label,
+.user_timeFrame input[type="date"],
+.user_agreement label,
+.contact_form-sideBanner p {
 	color: #404047;
 }
 
 
+
+
+
+
+
+
+
+
 .card-details-container h3,
 .services_card-details-container h3,
-.services_process-content-title h1 {
+.services_process-content-title h1,
+.card-details-container .fa-pen-ruler,
+.card-details-container .fa-laptop-code,
+.card-details-container .fa-lightbulb,
+.site-name,
+.social-links a,
+.card-content-title h1,
+.services_process-step-card h5,
+.services_cta-content-title h1,
+.about_story-details-content h1,
+.about_story-details-content h4,
+.about_ourValues-title h1,
+.about_howWeWork-title h1,
+.about_ourValues-card-details h3,
+.about_howWeWork-details-wrap h4,
+.contact_form-title h1,
+.contact_form-sideBanner h2,
+.contact_form-sideBanner h3 {
 	color: #17152b;
 }
+
+
+
+
+
 
 
 
@@ -69,15 +195,228 @@ a {
 	height: 40px;
 	font-size: 15px;
 	border-radius: 50%;
-	display: flex;
-	align-items: center;
 	justify-content: center;
 	border: 3px solid #ffffff;
 	position: relative;
 	top: -20px;
-	color: #17152b;
 	margin: 0 0 -10px 0;
 }
+
+
+
+
+
+
+
+
+
+.card-details-container .fa-pen-ruler,
+.card-details-container .fa-laptop-code,
+.card-details-container .fa-lightbulb,
+.header-layout,
+.menu-button,
+.nav-list-wrap,
+.nav-list,
+.social-links,
+.hero-details-wrap,
+.cards-container,
+.services_cards-container,
+.card-item,
+.services_card-details-container,
+.services_process-content,
+.services_process-content-steps,
+.services_cta-content-wrap,
+.about_story-content,
+.about_story-details-content,
+.about_ourValues-content,
+.about_ourValues-title,
+.about_ourValues-cards-container,
+.about_ourValues-card-details,
+.about_howWeWork-content,
+.about_howWeWork-details,
+.about_howWeWork-details-wrap,
+.contact_form-content,
+.contact_form,
+.contact_form .user_details,
+.contact_form .user_preferences,
+.contact_form .user_name,
+.contact_form .user_email,
+.contact_form .user_brand,
+.contact_form .button_group,
+.contact_form .user_budget,
+.contact_form .user_timeFrame,
+.contact_form .user_idea,
+.contact_form .button_group .button_group_wrap,
+.user_agreement,
+.contact_form-sideBanner,
+.footer-wrap,
+.footer-layout,
+.footer-links {
+	display: flex;
+}
+
+
+
+
+
+
+
+
+
+.header-layout,
+.nav-list-wrap,
+.card-item,
+.footer-wrap {
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+.site-name,
+.menu-button,
+.nav-list a,
+.hero-details a,
+.services_cta-content-wrap a,
+.about_story-details-content h4,
+.user_name label,
+.user_email label,
+.user_brand label,
+.button_group legend,
+.user_budget label,
+.user_timeFrame label,
+.user_idea label {
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+.site-name span,
+.social-links a:hover,
+.social-links a:focus-visible,
+.services_hero-details h5,
+.services_card-content-title h5,
+.about_hero-details h5,
+.contact_hero-details h5,
+.card-content-title h5,
+.services_card-details-container h4,
+.services_card-details-container h5,
+.services_process-content-title h4,
+.services_cta-content-title h5,
+.about_story-details-content h5,
+.about_ourValues-title h5,
+.about_howWeWork-title h5,
+.contact_form-title h5,
+.contact_form-sideBanner h5 {
+	color: #d83f58;
+}
+
+
+
+
+
+
+
+
+
+
+
+.card-details-container .fa-pen-ruler,
+.card-details-container .fa-laptop-code,
+.card-details-container .fa-lightbulb,
+.header-layout,
+.menu-button,
+.menu-button i,
+.social-links,
+.hero-details-wrap,
+.user_agreement {
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-button,
+.hero-details a,
+.services_hero-details a,
+.about_hero-details a,
+.form_button_wrap button,
+.services_cta-content-wrap a {
+	background-color: #4c3cff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-list-wrap,
+.nav-list,
+.cards-container,
+.services_cards-container,
+.card-item,
+.services_card-details-container,
+.services_process-content,
+.services_process-content-steps,
+.services_cta-content-wrap,
+.about_story-content,
+.about_story-details-content,
+.about_ourValues-content,
+.about_ourValues-title,
+.about_ourValues-cards-container,
+.about_ourValues-card-details,
+.about_howWeWork-content,
+.about_howWeWork-details,
+.about_howWeWork-details-wrap,
+.contact_form,
+.contact_form .user_details,
+.contact_form .user_preferences,
+.contact_form .user_name,
+.contact_form .user_email,
+.contact_form .user_brand,
+.contact_form .button_group,
+.contact_form .user_budget,
+.contact_form .user_timeFrame,
+.contact_form .user_idea,
+.contact_form-sideBanner,
+.footer-wrap,
+.footer-layout,
+.footer-links {
+	flex-direction: column;
+}
+
+
+
+
+
+
+
 
 
 
@@ -108,41 +447,24 @@ body .menu-is-open {
 }
 
 .header-layout {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	gap: 20px;
 	height: 72px;
 }
 
 .site-name {
-	color: #17152b;
 	font-size: 21px;
-	font-weight: 600;
 	letter-spacing: -0.4px;
 	text-decoration: none;
 	white-space: nowrap;
 }
 
-.site-name span {
-	color: #d83f58;
-}
 
-.site-name:hover,
-.site-name:focus-visible {
-	color: #4c3cff;
-}
 
 .menu-button {
-	display: flex;
-	align-items: center;
 	gap: 8px;
 	padding: 8px 12px;
-	color: #ffffff;
-	background-color: #4c3cff;
 	border: 0;
 	border-radius: 8px;
-	font-weight: 600;
 	box-shadow: 0 6px 14px rgba(76, 60, 255, 0.22);
 	cursor: pointer;
 }
@@ -150,7 +472,6 @@ body .menu-is-open {
 .menu-button i {
 	width: 18px;
 	font-size: 18px;
-	align-items: center;
 }
 
 .menu-button:hover {
@@ -169,20 +490,12 @@ body .menu-is-open {
 	
 }
 
-.main-navigation.menu-open {
-	display: block;
-}
 
 .nav-list-wrap {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	min-height: stretch;
 }
 
 .nav-list {
-	display: flex;
-	flex-direction: column;
 	gap: 8px;
 	padding: 0;
 	margin: 0;
@@ -190,10 +503,7 @@ body .menu-is-open {
 }
 
 .nav-list a {
-	display: block;
-	color: #ffffff;
 	font-size: 20px;
-	font-weight: 600;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -203,12 +513,9 @@ body .menu-is-open {
 }
 
 .social-links {
-	display: flex;
-	align-items: center;
 	gap: 12px;
 	margin: 0;
 	padding: 0;
-	
 	list-style: none;
 }
 
@@ -216,18 +523,12 @@ body .menu-is-open {
 	display: grid;
 	width: 46px;
 	height: 46px;
-	color: #17152b;
 	background-color: #ffd166;
 	border-radius: 50%;
 	place-items: center;
 	text-decoration: none;
 }
 
-.social-links a:hover,
-.social-links a:focus-visible {
-	color: #ffffff;
-	background-color: #d83f58;
-}
 
 
 
@@ -253,8 +554,6 @@ body .menu-is-open {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
-	display: flex;
-	align-items: center;
 	padding: 60px 0 80px;
 }
 
@@ -266,7 +565,6 @@ body .menu-is-open {
 .services_card-content-title h5,
 .about_hero-details h5,
 .contact_hero-details h5 {
-	color: #d83f58;
 	text-transform: uppercase;
 	font-weight: 700;
 	margin: 0 0 8px;
@@ -274,7 +572,6 @@ body .menu-is-open {
 }
 
 .hero-details h1 {
-	color: #ffffff;
 	line-height: 1.2;
 	margin: 0 0 16px 0;
 }
@@ -294,13 +591,8 @@ body .menu-is-open {
 }
 
 
-.about_hero-details h1 span,
-.contact_hero-details h1 span {
-	display: block;
-}
 
 .hero-details p {
-	color: #ffffff;
 	margin: 0 0 32px 0;
 	line-height: 1.5;
 }
@@ -310,15 +602,11 @@ body .menu-is-open {
 .contact_hero-details p {
 	font-size: 16px;
 	margin: 0 0 40px;
-	color: #404047;
 }
 
 
 .hero-details a {
 	padding: 10px 24px;
-	background-color: #4c3cff;
-	color: #ffffff;
-	font-weight: 600;
 	text-decoration: none;
 	border-radius: 10px;
 	display: inline-block;
@@ -328,8 +616,6 @@ body .menu-is-open {
 .about_hero-details a,
 .form_button_wrap button {
 	padding: 14px 26px;
-	background-color: #4c3cff;
-	color: #ffffff;
 	border-radius: 10px;
 	text-decoration: none;
 	font-weight: 500;
@@ -385,7 +671,6 @@ body .menu-is-open {
 }
 
 .card-content-title h5 {
-	color: #d83f58;
 	text-transform: uppercase;
 	margin: 0 0 8px 0;
 }
@@ -394,7 +679,6 @@ body .menu-is-open {
 	margin: 0 0 16px 0;
 	width: 100%;
 	line-height: 1.2;
-	color: #17152b;
 	font-size: 28px;
 }
 
@@ -407,20 +691,16 @@ body .menu-is-open {
 	width: 100%;
 	line-height: 1.5;
 	margin: 0;
-	color: #404047;
 }
 
 .services_card-content-title p {
-	color: #404047;
 	font-size: 18px;
 	margin: 0;
 }
 
 .cards-container,
 .services_cards-container {
-	display: flex;
 	gap: 50px;
-	flex-direction: column;
 }
 
 
@@ -428,9 +708,6 @@ body .menu-is-open {
 	border-radius: 16px;
 	background-color: #ffffff;
 	box-shadow: 0 5px 10px rgba(23, 21, 42, 0.12);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	gap: 28px;
 	text-decoration: none;
 	padding: 0 0 32px;
@@ -456,14 +733,11 @@ body .menu-is-open {
 
 .services_card-details-container {
 	padding: 28px 28px 0;
-	display: flex;
-	flex-direction: column;
 	gap: 20px;
 }
 
 .services_card-details-container h4 {
 	font-weight: 700;
-	color: #d83f58;
 	margin: 0;
 	font-size: 15px;
 }
@@ -491,7 +765,6 @@ body .menu-is-open {
 	font-weight: 700;
 	text-transform: uppercase;
 	margin: 0;
-	color: #d83f58;
 }
 
 .card-details-container ul {
@@ -514,7 +787,6 @@ body .menu-is-open {
 	background-color: transparent;
 	border-style: none;
 	padding: 0 26px;
-	color: #4c3cff;
 	cursor: pointer;
 }
 
@@ -536,13 +808,10 @@ body .menu-is-open {
 
 .services_process-content {
 	padding: 64px 0 26px;
-	display: flex;
-	flex-direction: column;
 	gap: 36px;
 }
 
 .services_process-content-title h4 {
-	color: #d83f58;
 	text-transform: uppercase;
 	font-size: 15px;
 	margin: 0 0 20px;
@@ -556,8 +825,6 @@ body .menu-is-open {
 }
 
 .services_process-content-steps {
-	display: flex;
-	flex-direction: column;
 	gap: 36px;
 }
 
@@ -570,14 +837,12 @@ body .menu-is-open {
 }
 
 .services_process-step-card h4 {
-	color: #4c3cff;
 	font-size: 25px;
 	font-weight: 700;
 	margin: 0 0;
 }
 
 .services_process-step-card h5 {
-	color: #17152b;
 	font-size: 23px;
 	font-weight: 700;
 	text-transform: capitalize;
@@ -585,7 +850,6 @@ body .menu-is-open {
 }
 
 .services_process-step-card p {
-	color: #404047;
 	font-size: 17px;
 }
 
@@ -608,13 +872,10 @@ body .menu-is-open {
 	background-color: #fbf4fb;
 	border-radius: 16px;
 	padding: 36px 22px;
-	display: flex;
-	flex-direction: column;
 	gap: 40px;
 }
 
 .services_cta-content-title h5 {
-	color: #d83f58;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 700;
@@ -622,14 +883,13 @@ body .menu-is-open {
 }
 
 .services_cta-content-title h1 {
-	color: #17152b;
+ 
 	font-size: 28px;
 	margin: 0 0 16px;
 	line-height: 1.3;
 }
 
 .services_cta-content-title p {
-	color: #404047;
 	font-size: 18px;
 	margin: 0;
 }
@@ -637,10 +897,7 @@ body .menu-is-open {
 .services_cta-content-wrap a {
 	display: inline-flex;
 	gap: 8px;
-	background-color: #4c3cff;
 	border-radius: 10px;
-	color: #ffffff;
-	font-weight: 600;
 	padding: 16px 28px;
 	text-decoration: none;
 	font-size: 18px;
@@ -673,19 +930,14 @@ body .menu-is-open {
 }
 
 .about_story-content {
-	display: flex;
-	flex-direction: column;
 	gap: 64px;
 }
 
 .about_story-details-content {
-	display: flex;
-	flex-direction: column;
 	gap: 20px;
 }
 
 .about_story-details-content h5 {
-	color: #d83f58;
 	text-transform: uppercase;
 	margin: 0;
 	font-size: 15px;
@@ -694,22 +946,18 @@ body .menu-is-open {
 
 .about_story-details-content h1 {
 	font-size: 30px;
-	color: #17152b;
 	margin: 0;
 	line-height: 1.4;
 }
 
 .about_story-details-content p {
 	margin: 0;
-	color: #404047;
 	line-height: 1.5;
 
 }
 
 .about_story-details-content h4 {
-	color: #17152b;
 	font-size: 20px;
-	font-weight: 600;
 	margin: 0;
 }
 
@@ -732,20 +980,15 @@ body .menu-is-open {
 .about_ourValues-content {
 	background-color: #fbf4fb;
 	padding: 48px 22px;
-	display: flex;
-	flex-direction: column;
 	gap: 24px;
 }
 
 .about_ourValues-title {
-	display: flex;
-	flex-direction: column;
 	gap: 24px;
 }
 
 .about_ourValues-title h5,
 .about_howWeWork-title h5 {
-	color: #d83f58;
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: 700;
@@ -754,15 +997,12 @@ body .menu-is-open {
 
 .about_ourValues-title h1,
 .about_howWeWork-title h1 {
-	color: #17152b;
 	margin: 0;
 	font-size: 32px;
 	line-height: 1.5;
 }
 
 .about_ourValues-cards-container {
-	display: flex;
-	flex-direction: column;
 	gap: 28px;
 }
 
@@ -773,27 +1013,22 @@ body .menu-is-open {
 }
 
 .about_ourValues-card-details {
-	display: flex;
-	flex-direction: column;
 	gap: 18px;
 
 }
 
 .about_ourValues-card-details h4 {
-	color: #4c3cff;
 	font-size: 22px;
 	font-weight: 700;
 	margin: 0;
 }
 
 .about_ourValues-card-details h3 {
-	color: #17152b;
 	margin: 0;
 	font-size: 22px;
 	line-height: 1.3;
 }
 .about_ourValues-card-details p {
-	color: #404047;
 	line-height: 1.5;
 	margin: 0;
 	font-size: 17px;
@@ -811,8 +1046,6 @@ body .menu-is-open {
 
 .about_howWeWork-content {
 	padding: 80px 0 36px;
-	display: flex;
-	flex-direction: column;
 	gap: 36px;
 }
 
@@ -821,25 +1054,19 @@ body .menu-is-open {
 }
 
 .about_howWeWork-details {
-	display: flex;
-	flex-direction: column;
 	gap: 28px;
 }
 
 .about_howWeWork-details-wrap {
-	display: flex;
-	flex-direction: column;
 	gap: 8px;
 }
 
 .about_howWeWork-details-wrap h4 {
 	font-size: 23px;
 	margin: 0;
-	color: #17152b;
 }
 
 .about_howWeWork-details-wrap p {
-	color: #404047;
 	font-size: 17px;
 	margin: 0;
 }
@@ -856,7 +1083,6 @@ body .menu-is-open {
 
 
 .contact_form-content {
-	display: flex;
 	flex-direction: column-reverse;
 	gap: 64px;
 }
@@ -876,7 +1102,6 @@ body .menu-is-open {
 
 .contact_form-title h5 {
 	margin: 0 0 10px;
-	color: #d83f58;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 700;
@@ -885,19 +1110,15 @@ body .menu-is-open {
 .contact_form-title h1 {
 	font-size: 26px;
 	margin: 0 0 16px;
-	color: #17152b;
 	line-height: 1.5;
 }
 
 .contact_form-title p {
 	font-size: 16px;
-	color: #404047;
 	margin: 0;
 }
 
-.contact_form-title p span {
-	display: block;
-}
+
 
 
 
@@ -919,8 +1140,6 @@ body .menu-is-open {
 .user_timeFrame label,
 .user_idea label {
 	font-size: 16px;
-	font-weight: 600;
-	display: block;
 }
 
 
@@ -935,7 +1154,6 @@ body .menu-is-open {
 	border-radius: 8px;
 	border: 1px solid #cecbd7;
 	outline: none;
-	color: #404047;
 }
 
 
@@ -958,16 +1176,14 @@ body .menu-is-open {
 	display: inline-block;
 	border: 1px solid #cecbd7;
 	border-radius: 8px;
-	color: #404047;
 	cursor: pointer;
 	user-select: none;
 }
 
 
 
-.button_group input[type="checkbox"]:checked + label{
+.button_group input[type="checkbox"]:checked + label {
 	background: #3828d6;
-	color: #ffffff;
 	border-color: #3828d6;
 }
 
@@ -986,9 +1202,7 @@ body .menu-is-open {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%233828d6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2'/%3E%3Cline x1='16' y1='2' x2='16' y2='6'/%3E%3Cline x1='8' y1='2' x2='8' y2='6'/%3E%3Cline x1='3' y1='10' x2='21' y2='10'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1rem center;
-	color: #404047;
 	outline: none;
-	/* line-height: 1.3; */
 }
 
 
@@ -1054,8 +1268,6 @@ body .menu-is-open {
 
 
 .contact_form {
-	display: flex;
-	flex-direction: column;
 	gap: 26px;
 }
 
@@ -1071,9 +1283,7 @@ body .menu-is-open {
 
 .contact_form .user_details,
 .contact_form .user_preferences {
-	display: flex;
 	gap: 20px;
-	flex-direction: column;
 }
 
 
@@ -1084,8 +1294,6 @@ body .menu-is-open {
 .contact_form .user_budget,
 .contact_form .user_timeFrame,
 .contact_form .user_idea {
-	display: flex;
-	flex-direction: column;
 	gap: 10px;
 }
 
@@ -1098,14 +1306,11 @@ body .menu-is-open {
 }
 
 .contact_form .button_group .button_group_wrap {
-	display: flex;
 	gap: 16px;
 	flex-wrap: wrap;
 }
 
 .user_agreement {
-	display: flex;
-	align-items: center;
 	gap: 10px;
 }
 
@@ -1118,7 +1323,6 @@ body .menu-is-open {
 .user_agreement label {
 	font-size: 15px;
 	font-weight: 500;
-	color: #404047;
 }
 
 
@@ -1144,8 +1348,6 @@ body .menu-is-open {
 	padding: 36px 32px;
 	background: #fbf4fb;
 	border-radius: 16px;
-	display: flex;
-	flex-direction: column;
 	gap: 26px;
 }
 
@@ -1154,7 +1356,6 @@ body .menu-is-open {
 }
 
 .contact_form-sideBanner h5 {
-	color: #d83f58;
 	font-size: 14px;
 }
 .contact_form-sideBanner h5:nth-of-type(1) {
@@ -1162,12 +1363,8 @@ body .menu-is-open {
 }
 
 .contact_form-sideBanner h2 {
-	color: #17152b;
 	font-size: 26px;
 	line-height: 1.3;
-}
-.contact_form-sideBanner h2 span {
-	display: block;
 }
 
 .contact_form-sideBanner h4 {
@@ -1176,13 +1373,11 @@ body .menu-is-open {
 }
 
 .contact_form-sideBanner p {
-	color: #404047;
 	font-size: 16px;
 	line-height: 1.5;
 }
 
 .contact_form-sideBanner h3 {
-	color: #17152b;
 	font-size: 20px;
 }
 
@@ -1219,22 +1414,16 @@ body .menu-is-open {
 
 .site-footer {
 	padding-top: 48px;
-	color: #ffffff;
 	background-color: #17152b;
 	border-top: 6px solid #4c3cff;
 }
 
 .footer-wrap {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	gap: 40px;
 	padding: 0 0 60px;
 }
 
 .footer-layout {
-	display: flex;
-	flex-direction: column;
 	gap: 32px;
 }
 
@@ -1242,7 +1431,6 @@ body .menu-is-open {
 .footer-title {
 	margin-top: 0;
 	margin-bottom: 8px;
-	color: #ffffff;
 	font-size: 22px;
 	font-weight: bold;
 }
@@ -1258,8 +1446,6 @@ body .menu-is-open {
 
 
 .footer-links {
-	display: flex;
-	flex-direction: column;
 	gap: 10px;
 	margin: 0;
 	padding: 0;
@@ -1361,7 +1547,6 @@ body .menu-is-open {
   }
 
 	.nav-list a[aria-current="page"] {
-		color: #ffffff;
 		background-color: #4c3cff;
 		box-shadow: 0 6px 14px rgba(76, 60, 255, 0.22);
 	}
